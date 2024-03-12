@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="muDU1FMlsASpEGzN0yOo8rp9OlW.png">
+    <title>TV Show You Characters</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a
+             href="index.html"><h1>You</h1></a>
+        </div>
+        <div class="mid_section">
+            <label for="sectionSelect" style="color: white;">Characters</label>
+           
+            <select id="sectionSelect">
+                <option value="" disabled selected>Characters :</option>
+                <option value="joe">Penn Badgley (Joe Goldberg)</option>
+                <option value="beck">Elizabeth Lail (Beck)</option>
+                <option value="love">Victoria Pedretti (Love Quinn)</option>
+                <option value="ortega">Jenna Ortega (Ellie Alves)</option>
+                <option value="candace">Ambyr Childers (Candace Stone)</option>
+                <option value="marienne">Tati Gabrielle (Marienne Bellamy)</option>
+                <option value="kate">Charlotte Ritchie (Kate)</option>
+            </select>
+            
+        </div>
+    </header> 
+    <main>
+        <section id="joe">
+            <h1 class="h1">Penn Badgley (Joe Goldberg)</h1>
+            <img src="Penn_Badgley_as_Joe_Goldberg_1.png" alt="">
+            <br><br>
+            <p>Joseph “Joe” Goldberg is a fictional character from the You series and the novel Perfect by Caroline Kepnes. He is the main protagonist in both the book and the adapted series. He is mainly played by Penn Badgley in the series.</p>
+            <br>
+        </section>
+        <section id="beck">
+            <h1>Elizabeth Lail (Beck)</h1>
+            <br>
+            <img src="809130_v9_bb.jpg" alt="">
+            <br><br>
+            <p>Elizabeth Dean Lail, born March 25, 1992 in Texas, is an American actress. She was noticed for her interpretation of Anna in the television series Once Upon a Time, then she was the heroine of the first season of You.</p>
+            <br>
+        </section>
+        <section id="love">
+            <h1>Victoria Pedretti (Love Quinn)</h1>
+            <br>
+            <img src="0edd314c166e88df3806695cf766bc10.jpg" alt="">
+            <br><br>
+            <p>Love Quinn-Goldberg is a central character in the second and third seasons of YOU, Joe's new obsessive love interest and later main antagonist. She is played by Victoria Pedretti.</p>
+            <br>
+        </section>
+        <section id="ortega">
+            <h1>Jenna Ortega (Ellie Alves)</h1>
+            <br>
+            <img src="tumblr_d85ed79e32f2a2b96f5d29359d7b473d_afb8e0ab_400.jpg" alt="">
+            <br><br>
+            <p>Ellie Alves is a main character in the second season of YOU. She is played by Jenna Ortega.</p>
+            <br>
+        </section>
+        <section id="candace">
+            <h1>Ambyr Childers (Candace Stone)</h1>
+            <br>
+            <img src="ambyr-childers-as-candace-stone-in-netflixs-you-1577134546-view-0.jpg" alt="">
+            <br><br>
+            <p>Candace Stone is a main character and an antagonist of Netflix's You, having a recurring role in the first season and serving as the main antagonist of the second season. She is portrayed by Ambyr Childers.</p>
+            <br>
+        </section>
+        <section id="marienne">
+            <h1>Tati Gabrielle (Marienne Bellamy)</h1>
+            <br>
+            <img src="what-marienne-bellamy.png" alt="">
+            <br><br>
+            <p>Marienne Bellamy is a main character of Netflix's You, serving as the titular love interest of the third season. She is portrayed by Tati Gabrielle.</p>
+            <br>
+        </section>
+        <section id="kate">
+            <h1>Charlotte Ritchie (Kate)</h1>
+            <br>
+            <img src="who-plays-kate-in-you-season-4--charlotte-ritchie-1675947855-view-0.jpg" alt="">
+            <br><br>
+            <p>Katherine Galvin, better known as Kate, is a main character in the fourth season of YOU, serving as Joe's titular love interest. She is played by Charlotte Ritchie.</p>
+            <br>
+        </section>
+    </main>  
+    <script>
+        document.getElementById('sectionSelect').addEventListener('change', function() {
+            var selectedSection = this.value;
+            var sectionElement = document.getElementById(selectedSection);
+            if (sectionElement) {
+                sectionElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    </script>
+</body>
+</html>
